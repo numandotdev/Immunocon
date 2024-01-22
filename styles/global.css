@@ -21,6 +21,8 @@ html {
   --primary-green: #7cdb31;
   --dark-color: #010000;
   --white-color: #ffffff;
+
+  --inner-width: min(100%, 1280px);
 }
 
 body {
@@ -71,35 +73,6 @@ header {
   display: flex;
   flex-direction: column;
 }
-/* .brand_logo-text {
-  color: var(--dark-color);
-  font-size: 33px;
-  font-weight: 700;
-} */
-/* .brand_logo-text-bottom {
-  color: var(--dark-color);
-  font-family: Poppins;
-  font-size: 27px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-} */
-/* .brand_logo-text-bottom span {
-  display: flex;
-  height: 29px;
-  padding: 11px;
-  justify-content: center;
-  align-items: center;
-  gap: 11px;
-  border-radius: 33.429px;
-  background: #8f0d0b;
-  color: #fff;
-  text-align: center;
-  font-family: Poppins;
-  font-size: 12px;
-  font-weight: 600;
-} */
 
 .header_hero-title {
   display: flex;
@@ -155,6 +128,7 @@ header {
   justify-content: space-evenly;
   height: 100%;
   align-items: center;
+  margin-right: 32px;
 }
 .nav_list {
   list-style: none;
@@ -324,7 +298,7 @@ p.footer_desc-text:first-child {
 .new_container {
   width: 100%;
   min-height: max-content;
-  height: 300px;
+  height: max-content;
 }
 
 .heading_text {
