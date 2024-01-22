@@ -1,6 +1,7 @@
 /* Dynamic Profile Card */
 .dynamic_profile-container {
   width: var(--inner-width) !important;
+  height: 330px;
   margin-inline: auto;
   display: flex;
   justify-content: flex-start;
