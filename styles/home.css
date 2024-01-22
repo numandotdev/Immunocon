@@ -73,9 +73,79 @@
   margin-bottom: 16px;
 }
 
+/* logo slider */
+.home_partner-slider {
+  height: max-content;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home_partner-title {
+  text-align: center;
+}
+.home_partner-slider .hr_line {
+  width: 25%;
+}
+
+.logo_slider {
+  position: relative;
+  width: 90%;
+  margin-inline: auto;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.logo_slider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 180px;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+.logo_slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 180px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+.logo_slider:hover .logo_slides {
+  animation-play-state: paused;
+}
+
+.logo_slides {
+  display: inline-block;
+  animation: 10s logo-slider infinite linear;
+  padding-block: 16px;
+}
+.slide_icons {
+  width: auto;
+  height: 80px;
+  margin-right: 40px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@keyframes logo-slider {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 /* Dynamic Profile Card */
 .dynamic_profile-container {
-  width: var(--inner-width) !important;
+  width: 90%!important;
   height: 330px;
   margin-inline: auto;
   display: flex;
